@@ -20,13 +20,20 @@ header .carou1 button:nth-child(3) {
   color: white;
   background-color: #c42d40;
 }
-header .carou1 div:nth-child(2) div p span:nth-child(2) {
+header .taste {
   color: #c42d40;
 }
 
 .section1 {
   margin: auto;
   background-image: url(../../public/images/main_bg.jpg);
+  padding-bottom: 5%;
+}
+.section1 .img-bottom {
+  background-repeat: repeat-x;
+  height: 10px;
+  background-color: black;
+  margin-bottom: 2%;
 }
 .section1 .div-elem1 {
   background-color: white;
@@ -41,11 +48,11 @@ header .carou1 div:nth-child(2) div p span:nth-child(2) {
   margin: 0 !important;
   padding: 0 !important;
 }
-.section1 .div-elem1 div p:nth-child(1) .second-title1 {
+.section1 .div-elem1 div p:nth-child(1) .red-title {
   color: #c42d40;
   font-size: 30px;
 }
-.section1 .div-elem1 div p:nth-child(1) .second-title2 {
+.section1 .div-elem1 div p:nth-child(1) .black-title {
   font-size: 25px;
 }
 .section1 .div-elem1 div p:nth-child(3) {
@@ -54,6 +61,38 @@ header .carou1 div:nth-child(2) div p span:nth-child(2) {
 
 .section2 {
   background-image: url(../../team_background.jpg);
+  padding-top: 5%;
+}
+.section2 p:nth-child(1) {
+  font-family: "Courgette", cursive;
+}
+.section2 .red-title {
+  color: #c42d40;
+  font-size: 30px;
+}
+.section2 .black-title {
+  font-size: 25px;
+}
+
+.section3 {
+  background-image: url(../../public/images/main_bg.jpg);
+}
+.section3 .elem-3 {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  background-image: url(../../public/images/box-left-top.png), url(../../public/images/box-right-top.png), url(../../public/images/box-bottom-left.png), url(../../public/images/box-bottom_right.png);
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+}
+.section3 .elem-3 .red-title {
+  color: #c42d40;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+}
+.section3 .elem-3 .black-title {
+  font-family: "Courgette", cursive;
+  font-size: 25px;
 }
 
 /*!
@@ -6840,6 +6879,10 @@ textarea.form-control-lg {
 
 .w-10 {
   width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
 }
 
 .w-25 {
