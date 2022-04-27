@@ -58,9 +58,26 @@ header {
   color: white;
 }
 
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  background-color: #ffffff !important;
+}
+.carousel-indicators button:hover {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  border: 3px solid #787878 !important;
+  background-color: #ffffff !important;
+  margin: 1px !important;
+}
+
 .section1 {
   margin: auto;
   background-image: url(../../public/images/main_bg.jpg);
+  border-image: url("../../public/images/bottom_deecoration_img.png") 30/19px repeat;
+  border-image-slice: 30;
   padding-bottom: 5%;
   padding-top: 5%;
 }
@@ -91,14 +108,16 @@ header {
   font-size: 13px;
 }
 
-.list-g a:hover {
+.list-g a:focus {
   border-right: solid 5px #c42d40;
+  background-color: transparent;
 }
 .list-g a {
   border-left: none;
   border-top: none;
   border-bottom: 1px solid white;
   font-family: "Courgette", cursive;
+  background-color: transparent;
 }
 .list-g a i {
   font-size: 50px;
@@ -395,6 +414,10 @@ footer .btn-f {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
+
   .nav-main {
     margin-left: 40px;
     font-size: 12px;
@@ -448,6 +471,7 @@ footer .btn-f {
 
   .btn-toggler {
     background-color: black !important;
+    border: 5px solid #ccc;
   }
 
   .carou1 {
@@ -495,7 +519,8 @@ footer .btn-f {
   }
 
   .prize {
-    width: 100%;
+    width: 80%;
+    font-size: 15px !important;
   }
 
   .elem-3 {
@@ -581,6 +606,10 @@ footer .btn-f {
     margin-bottom: 10%;
   }
 
+  .title-f {
+    text-align: center;
+  }
+
   .aa {
     display: flex;
     justify-content: center;
@@ -592,6 +621,9 @@ footer .btn-f {
     justify-content: center;
   }
 
+  .tags p {
+    text-align: center;
+  }
   .tags div {
     display: flex;
     justify-content: center;
@@ -601,6 +633,8 @@ footer .btn-f {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 2%;
   }
 }
 /*!

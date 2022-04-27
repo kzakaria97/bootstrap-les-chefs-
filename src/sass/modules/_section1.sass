@@ -1,6 +1,8 @@
 .section1
     margin: auto
     background-image: url(../../public/images/main_bg.jpg)
+    border-image: url("../../public/images/bottom_deecoration_img.png") 30 / 19px repeat
+    border-image-slice: 30
     padding-bottom: 5%
     padding-top: 5%
     .div-elem1
@@ -26,13 +28,15 @@
                 font-size: $size-para
 
 .list-g
-    a:hover
+    a:focus
         border-right: solid 5px $color-red
+        background-color: transparent
     a
         border-left: none
         border-top: none
         border-bottom: 1px solid white
         font-family: $font-courgette
+        background-color: transparent
         i
             font-size: 50px
             color: #ccc
