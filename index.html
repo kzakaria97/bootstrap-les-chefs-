@@ -17,80 +17,81 @@
 
 <body>
     <!-- début du header (navbar+caroussel) -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark text-uppercase ms-md-5 ps-md-5">
+    <header class="d-flex flex-column align-items-center">
+        <nav class="nav-main navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto border-top border-bottom">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="border-nav navbar-nav text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">abouts</a>
+                            <a class="nav-link" href="#">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">menu list</a>
+                            <a class="nav-link" href="#">meni list</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">team</a>
+                            <a class="nav-link disabled">team</a>
                         </li>
                     </ul>
-                    <img src="./public/images/logo.png" class="navbar-nav me-auto mb-2 mb-lg-0" alt="#">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 border-top border-bottom">
+                    <ul class="navbar-nav text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">reservation</a>
+                            <a class="nav-link active" aria-current="page" href="#"><img src="./public/images/logo.png"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                    <ul class="border-nav navbar-nav text-uppercase text-uppercase">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">reservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">blog</a>
+                            <a class="nav-link" href="">blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">testimonials</a>
+                            <a class="nav-link" href="">testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">contact us</a>
+                            <a class="nav-link" href="">contact us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
+        
         <div id="carouselExampleIndicators" class="carou1 carousel slide" data-bs-ride="carousel">
 
-            <div class="carousel-inner pt-5">
-                <div class="carousel-item active text-center">
-                    <p class="fs-3 ">Whatever your
-                        <span class="text-uppercase fs-1"> occasion,<br>
-                        </span>
-                        <span class=" taste text-uppercase fs-1">taste</span>
-                        <span class="fs-2"> makes</span> it one <br>
-                        to
-                        <span class="fs-2"> remember!</span>
+            <div class="carousel-inner">
+                <div class="font-carou carousel-item active text-center">
+                    <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span class="makes">remember!</span>
                     </p>
-                    <button class="text-uppercase bg-light rounded-pill border-0">purchase theme
+                    <div>
+                    <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
                     </button>
-                    <button class="text-uppercase rounded-pill border-0">learn more
+                    <button class="btn-2 text-uppercase rounded-pill border-0">learn more
                     </button>
                 </div>
-                <div class="carousel-item text-center">
-                    <p class="fs-3 ">Whatever your<span class="text-uppercase fs-1"> occasion,<br></span>
-                        <span class="taste text-uppercase fs-1 ">taste
-                        </span>
-                        <span class="fs-2"> makes</span> it one
-                        <br>to<span class="fs-2"> remember!</span>
-                    </p>
-                    <button class="text-uppercase bg-light rounded-pill border-0">purchase theme</button>
-                    <button class="text-uppercase bg-danger rounded-pill border-0">learn more</button>
                 </div>
-                <div class="carousel-item text-center">
-                    <p class="fs-3 ">Whatever your
-                        <span class="text-uppercase fs-1"> occasion,<br>
-                        </span>
-                        <span class="taste text-uppercase fs-1 ">taste</span>
-                        <span class="fs-2"> makes</span> it one
-                        <br>to<span class="fs-2"> remember!</span>
+                <div class="font-carou carousel-item text-center">
+                    <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span class="makes">remember!</span>
                     </p>
-                    <button class="text-uppercase bg-light rounded-pill border-0">purchase theme</button>
-                    <button class="text-uppercase rounded-pill border-0">learn more</button>
+                    <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
+                    </button>
+                    <button class="btn-2 text-uppercase rounded-pill border-0">learn more
+                    </button>
+                </div>
+                <div class="font-carou carousel-item text-center">
+                    <p class="fs-4">Whatever yours<span class="occasion text-uppercase"> occasion,</span><br><span class="taste text-uppercase">taste </span><span class="makes">makes</span> it one <br> to <span class="makes">remember!</span>
+                    </p>
+                    <button class="btn-1 text-uppercase bg-light rounded-pill border-0">purchase theme
+                    </button>
+                    <button class="btn-2 text-uppercase rounded-pill border-0">learn more
+                    </button>
                 </div>
             </div>
         </div>
@@ -103,16 +104,14 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn"
                 aria-label="Slide 3"></button>
         </div>
-
-
-
+        
     </header>
     <!-- fin du header -->
 
     <!-- début de la section 1 -->
     <section class="section1">
         <div class="div-elem1">
-            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <div class="about1 d-flex flex-column justify-content-center align-items-center text-center">
                 <p><span class="red-title"> OUR</span> <span class="second-title2"> story</span></p>
                 <img src="./public/images/decoration_line.png" class="w-25 mb-md-5" alt="">
                 <p class="w-45 mb-md-5"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias officiis iste
@@ -183,15 +182,13 @@
                         <div class="col-6 text-end">
                             <input type="text" name="name" id="name" placeholder="Enter Full Name" class="case">
                         </div>
-                        <div class="col-6"><input type="text" name="id" id="id" placeholder="Enter Id"
-                                class="case">
+                        <div class="col-6"><input type="text" name="id" id="id" placeholder="Enter Id" class="case">
                         </div>
                     </div>
 
                     <div class="row pb-md-2">
                         <div class="col-6 text-end">
-                            <input type="text" name="phone" id="phone" placeholder="Phone Number"
-                                class="case">
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number" class="case">
                         </div>
                         <div class="col-6">
                             <input type="text" id="id" placeholder="No Of Person" class="case">
@@ -234,14 +231,14 @@
                     </div>
                     <div class="col-6">
                         <p class="legende1">
-                            <span class="fs-5"><strong>12</strong> </span>April 2017<span class="fs-5">/ <strong>20</strong></span> comment<span
-                                class="fs-5">/ <strong>35</strong></span> Likes.
+                            <span class="fs-5"><strong>12</strong> </span>April 2017<span class="fs-5">/
+                                <strong>20</strong></span> comment<span class="fs-5">/ <strong>35</strong></span> Likes.
                         </p>
                     </div>
                     <div class="col-6">
                         <p class="legende2">
-                            <span class="fs-5"><strong>12</strong>  </span>April 2017<span class="fs-5">/ <strong>20</strong></span> comment<span
-                                class="fs-5">/ <strong>35</strong></span> Likes.
+                            <span class="fs-5"><strong>12</strong> </span>April 2017<span class="fs-5">/
+                                <strong>20</strong></span> comment<span class="fs-5">/ <strong>35</strong></span> Likes.
                         </p>
                     </div>
                     <div class="row">
@@ -333,14 +330,16 @@
         <img src="./public/images/footer_bottom_decoration_img.png" class="" alt="">
     </section>
     <!-- fin de la section 5 contact -->
-<!-- debut du footer -->
+    <!-- debut du footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4">
                     <div class="d-flex flex-column">
                         <p class="title-f text-uppercase">about us</p>
-                        <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione eos provident recusandae. Quisquam, quibusdam aliquam minus maxime explicabo porro eligendi illo molestiae eum assumenda, modi asperiores nisi iusto facere.</p>
+                        <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione eos
+                            provident recusandae. Quisquam, quibusdam aliquam minus maxime explicabo porro eligendi illo
+                            molestiae eum assumenda, modi asperiores nisi iusto facere.</p>
                         <div class="fs-4">
                             <i class="fab fa-facebook-f pe-md-4"></i>
                             <i class="fab fa-google-plus-g pe-md-4"></i>
@@ -392,13 +391,13 @@
                         <button class="btn-f rounded-pill">Responsive Design</button>
                         <button class="btn-f rounded-pill">Hôtel</button>
                     </div>
-                    
+
                     <div class="pb-md-2">
                         <button class="btn-f rounded-pill">Blog section</button>
                         <button class="btn-f rounded-pill">SEO</button>
                         <button class="btn-f rounded-pill">Cuisine</button>
                     </div>
-                    
+
                     <div>
                         <button class="btn-f rounded-pill">Graphic</button>
                         <button class="btn-f rounded-pill">Food</button>
@@ -409,9 +408,6 @@
     </footer>
     <div class="div-end"></div>
     <!-- fin du footer -->
-
-
-
 
 
     <script src="./public/js/main.js"></script>
