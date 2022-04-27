@@ -8,19 +8,44 @@
         width: 80%
         margin: auto
         padding-top: 5%
-        padding-bottom: 5%
+        padding-bottom: 10%
         background-image: url(../../public/images/box-left-top.png),url(../../public/images/box-right-top.png),url(../../public/images/box-bottom-left.png),url(../../public/images/box-bottom_right.png)
         background-position: top left,top right,bottom left,bottom right 
         background-repeat: no-repeat
-        div
-            p:nth-child(1)
-                font-family: $font-courgette
-                margin: 0 !important
-                padding: 0 !important
-                .red-title
-                    color: $color-red
-                    font-size: $size-title-red
-                .black-title
-                    font-size: $size-title
+.our
+    p:nth-child(1)
+        font-family: $font-courgette
+        margin: 0 !important
+        padding: 0 !important
+        .red-title
+            color: $color-red
+            font-size: $size-title-red
+        .second-title2
+            font-size: $size-title
             p:nth-child(3)
                 font-size: $size-para
+
+.list-g
+    a:hover
+        border-right: solid 5px $color-red
+    a
+        border-left: none
+        border-top: none
+        border-bottom: 1px solid white
+        font-family: $font-courgette
+        i
+            font-size: 50px
+            color: #ccc
+        i:hover
+            font-size: 50px
+            color: $color-red
+.prize
+    color: $color-red
+    background-color: #ccc
+    text-align: center  
+.div-list
+    text-align: center
+    border-left: 1px solid #ccc
+    div
+        p
+            font-size: 13px
