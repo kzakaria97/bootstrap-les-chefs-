@@ -109,6 +109,10 @@ header {
   color: #c42d40;
 }
 
+.menu2 {
+  padding-right: 40px;
+}
+
 .prize {
   color: #c42d40;
   background-color: #ccc;
@@ -356,11 +360,6 @@ footer .btn-f {
     margin-left: 10%;
   }
 
-  .story1 {
-    margin: 0 !important;
-    width: 200px !important;
-  }
-
   .legende1 {
     width: 200px !important;
     left: 85px !important;
@@ -369,6 +368,52 @@ footer .btn-f {
   .legende2 {
     width: 200px !important;
     left: 10px !important;
+  }
+
+  .legende-text1 {
+    left: 90px;
+  }
+
+  .legende-text2 {
+    left: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-main {
+    margin-left: 40px;
+    font-size: 12px;
+  }
+
+  .section1 {
+    padding: 0;
+  }
+
+  .div-elem1 {
+    width: 100% !important;
+    padding-top: 10%;
+  }
+
+  .menu2 {
+    padding-right: 20px !important;
+  }
+
+  .section3 {
+    padding: 0 !important;
+  }
+  .section3 .elem-3 {
+    width: 100% !important;
+  }
+
+  .insta {
+    width: 3.3rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav-main {
+    position: relative;
+    right: 70% !important;
+    background-color: black !important;
+    z-index: 1 !important;
   }
 }
 /*!
