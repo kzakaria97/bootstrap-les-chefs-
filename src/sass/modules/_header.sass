@@ -4,8 +4,9 @@ header
     background-blend-mode: multiply
     background-size: cover
     height: 100vh
-    border-image: url(../../public/images/bottom_decoration_img.jpg) repeat
-    border-image-slice: 30
+    border-bottom: 15px solid transparent !important
+    border-image: url("../../public/images/bottom_decoration_img.png") repeat !important
+    border-image-slice: 30 !important
 .nav-hover
     ul
         li:hover
@@ -38,17 +39,17 @@ header
     font-size: 11px
     padding: 0.5rem
     color: white
-.carousel-indicators 
-    button
+.carousel-indicators button
         width: 10px !important
         height: 10px !important
         border-radius: 100% 
-        background-color: #ffffff !important
-    button:hover
-        width: 10px !important
-        height: 10px !important
+.carousel-indicators button.active
+        width: 5px !important
+        height: 5px !important
         border-radius: 100%
-        border: 3px solid #787878  !important
-        background-color: #ffffff !important
+        border: 1.5px solid  white  !important
         margin: 1px !important
+        background-clip: content-box !important
+        padding: .2rem !important
+        margin-top: 8px !important
     
